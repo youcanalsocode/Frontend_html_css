@@ -6,6 +6,9 @@
  --color-headings:#1b0760;
  --color-body:#918ca4;
 }
+*,*::before,*::after{
+    box-sizing:border-box ;
+}
 html{
     font-size: 62.5%;
 }
@@ -145,4 +148,59 @@ color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+/* -------button--------- */
+.button
+{
+    font-size: 1.8rem;
+    border-radius: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    margin:1rem 0;
+    border:0;
+    font-weight: 600;
+    padding:2rem 3rem;
+    color: white;
+    white-space: nowrap;
+
+    
+}
+.button--primary{
+    background-color: var(--color-primary);
+}
+.button--primary:hover{
+    background-color:#3a8ffd ;
+}
+.button--secondary
+{
+    background-color: var(--color-secondary);
+}
+.button--secondary:hover
+{
+    background-color:#00c8eb ;
+}
+.button--accent{
+    background-color: var(--color-accent);
+}
+.button--accent:hover
+{
+  background-color: #ec3000;  
+}
+
+.button--block
+{
+    width: 100%;
+    display:inline-block;
+}
+.button--outline{
+    background-color: white;
+    color: var(--color-headings);
+    border: 2px solid var(--color-headings);
+}
+
+@media screen and (min-width: 1024px) {
+    .button{
+        font-size: 1.5rem;
+
+    }
 }
