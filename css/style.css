@@ -1,3 +1,4 @@
+/* -------------------------------color-------------------------- */
 :root{
  --color-primary:#2584ff;
  --color-secondary:#00d9ff;
@@ -8,6 +9,8 @@
 html{
     font-size: 62.5%;
 }
+
+/* ------------------------------topography------------------------------------------ */
 body{
     font-family: Inter,Arial, sans-serif;
     color:var(--color-body);
@@ -48,7 +51,7 @@ p{
         font-size:2.4rem;
     }
 }
-/*link*/
+/*-------------------------------------link----------------------------------------------*/
 .link-arrow{
     color: var(--color-accent);
     text-decoration: none;
@@ -69,5 +72,35 @@ p{
 @media screen and (min-width: 1024px) {
     .link-arrow{
         font-size: 1.5rem;
+    }
+}
+/* ------badges------------- */
+.badge
+{   border-radius: 20px;
+    font-weight: 600;
+    font-size: 2rem;
+    color: white;
+    padding:0.5rem 2rem;
+    white-space: nowrap;
+}
+.badge.badge--primary{
+    background-color: var(--color-primary);
+color: #fff;
+}
+.batch--secondary
+{
+    background-color: var(--color-secondary);
+    color: #fff;
+}
+.badge--small{
+
+   font-size: 1.6rem;
+}
+@media screen and (min-width:1024px) {
+    .badge{
+        font-size: 1.2rem;
+    }
+    .badge--small{
+        font-size:1.2rem ;
     }
 }
