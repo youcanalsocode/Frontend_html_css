@@ -1,4 +1,4 @@
-/* -------------------------------color-------------------------- */
+/* -------------------------------color---------------------------------------------------------- */
 :root{
  --color-primary:#2584ff;
  --color-secondary:#00d9ff;
@@ -7,14 +7,15 @@
  --color-body:#918ca4;
  --color-border:#ccc;
 }
+
+
+/* ------------------------------topography------------------------------------------ */
 *,*::before,*::after{
     box-sizing:border-box ;
 }
 html{
     font-size: 62.5%;
 }
-
-/* ------------------------------topography------------------------------------------ */
 body{
     font-family: Inter,Arial, sans-serif;
     color:var(--color-body);
@@ -78,7 +79,7 @@ p{
         font-size: 1.5rem;
     }
 }
-/* ------badges------------- */
+/* ------------------------------------------badges------------------------------------------ */
 .badge
 {   border-radius: 20px;
     font-weight: 600;
@@ -108,7 +109,7 @@ color: #fff;
         font-size:1.2rem ;
     }
 }
-/* --------------list--- */
+/* -----------------------------------------list------------------------------------------------- */
 .list{
     list-style: none;
     padding-left: 0;
@@ -132,7 +133,7 @@ color: #fff;
         margin-bottom: 1rem;
      }
 }
-/* --------------icons-------------------- */
+/* ------------------------------------------------icons---------------------------------------- */
 .icon{
     width: 40px;
     height: 40px;
@@ -150,7 +151,7 @@ color: #fff;
     justify-content: center;
     align-items: center;
 }
-/* -------button--------- */
+/* ---------------------------------------------------button-------------------------------------------- */
 .button
 {
     font-size: 1.8rem;
@@ -163,6 +164,7 @@ color: #fff;
     padding:2rem 3rem;
     color: white;
     white-space: nowrap;
+    cursor: pointer;
 
     
 }
@@ -205,7 +207,7 @@ color: #fff;
 
     }
 }
-/* -------------input---------- */
+/* ----------------------------------------input------------------------------------------------------ */
 .text{
     border-radius: 30px;
     color:var(--color-headings);
@@ -239,4 +241,55 @@ color: #fff;
     .text{
         font-size: 1.5rem;
     }
+}
+/* -------------card------------------ */
+
+
+.plan__name{
+    font-size: 1.7rem;
+    color: white;
+
+}
+.plan__price{
+    font-size: 6rem;
+    
+}
+.plan__biling-cycle{
+    font-size: 1.6rem;   
+}
+.plan__description{
+    display: flex;
+    font-size: 1.6rem;   
+
+}
+.card--secondry{
+    background-color: var(--color-secondary);
+}
+.card--primary{
+    background-color:var(--color-primary);
+}
+.card_header{
+ 
+color: white;
+ border-radius: 4px;
+ padding:10px 10px 10px 10px;
+
+}
+.card--secondry{
+    background-color: var(--color-secondary);
+}
+.card--primary{
+    background-color:var(--color-primary);
+}
+.card_footer{
+    background-color: white;
+    border-radius: 4px;
+    font-size: 3vh;
+    
+}
+ .plan--popular .card_header::before {
+    content: url(../images/popular.svg);
+    display: inline-block;
+    position:absolute;
+    width: 40px;
 }
