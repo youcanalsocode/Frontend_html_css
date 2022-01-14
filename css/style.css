@@ -448,5 +448,31 @@ text-align: center;
     
 
 }
-
+/* ---collapse--- */
+.collapsible__header{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.collapsible__heading{
+    margin-top: 0;
+    font-size: 3rem;
+   
+}
+.collapsible__content{
+max-height: 0;
+overflow: hidden;
+transition: 0.3s;
+}
+.collapsible__icon{
+    transform: rotate(-90deg);
+    transition: 0.3s;
+    
+}
+.collapsible__expanded .collapsible__icon{
+    transform: 0;
+}
+.collapsible--expanded .collapsible__content{
+    max-height: 100vh;
+}
 
