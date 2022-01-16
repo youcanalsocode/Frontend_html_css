@@ -86,15 +86,16 @@ p{
 {   border-radius: 20px;
     font-weight: 600;
     font-size: 2rem;
-    color: white;
     padding:0.5rem 2rem;
     white-space: nowrap;
+    
+
 }
 .badge.badge--primary{
     background-color: var(--color-primary);
 color: #fff;
 }
-.batch--secondary
+.badge--secondary
 {
     background-color: var(--color-secondary);
     color: #fff;
@@ -116,7 +117,9 @@ color: #fff;
     list-style: none;
     padding-left: 0;
     color: var(--color-headings);
+   
 }
+
 .list--inline .list__items{
  display: inline-block;
  margin-right: 1.5rem;
@@ -178,8 +181,15 @@ color: #fff;
     white-space: nowrap;
     cursor: pointer;
    text-decoration: none;
-
+   
+   
     
+}
+.button .icon{
+    width:2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    vertical-align: middle;
 }
 .button--primary{
     background-color: var(--color-primary);
@@ -251,7 +261,7 @@ padding-right: 6rem;
 .input-group .text{
     border:0;
     flex-grow: 1;
-    padding:1.5rem 1rem;
+    padding:1.5rem 2rem;
 }
 @media screen and (min-width:1024px) {
     .text{
@@ -652,3 +662,30 @@ transition:color 0.3s;
             }
             
         }
+/* -------domain-block------- */
+.block-domain .input-group{
+    box-shadow: 0 0 30px 20px #e6ebee;
+    border: 0;
+    margin:4rem auto;
+    max-width: 670px;
+}
+.block-domain_price{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,2fr);
+    justify-items: center;
+    font-size: 2rem;
+    font-weight: 600;
+    max-width: 780px;
+    margin:0 auto;
+
+}
+
+@media screen and (min-width:769px){
+    .block-domain_price{
+        display: grid;
+        font-size: 1.5rem;
+        grid-template-columns: repeat(auto-fit ,minmax(100px,1fr));
+    }
+
+}
