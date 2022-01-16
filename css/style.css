@@ -127,7 +127,7 @@ color: #fff;
 .list--tick{
     margin-bottom: 1.2rem;
     padding-left: 2rem;
-    list-style-image: url(./images/tick.svg);
+    list-style-image:url(../images/tick.svg);
 }
 .list--tick .list__items{
    padding-left: 0.5rem;
@@ -688,4 +688,8 @@ transition:color 0.3s;
         grid-template-columns: repeat(auto-fit ,minmax(100px,1fr));
     }
 
+}
+/* -----block-plans========= */
+.block-plans .grid{
+    gap: 8rem 4rem;
 }
