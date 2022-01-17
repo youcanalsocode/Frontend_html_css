@@ -159,8 +159,8 @@ color: #fff;
 .icon-container__accent{
     background-color:var(--color-accent);
 }
-.icon_white{
-    fill:white;
+.icon--white{
+    fill: #fff;
 }
 .icon__small{
     width:30px;
@@ -176,7 +176,7 @@ color: #fff;
     margin:1rem 0;
     border:0;
     font-weight: 600;
-    padding:2rem 3rem;
+    padding:2rem 3vh;
     color: white;
     white-space: nowrap;
     cursor: pointer;
@@ -262,6 +262,7 @@ padding-right: 6rem;
     border:0;
     flex-grow: 1;
     padding:1.5rem 2rem;
+    width: 0;
 }
 @media screen and (min-width:1024px) {
     .text{
@@ -671,13 +672,14 @@ transition:color 0.3s;
 }
 .block-domain_price{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2,2fr);
     justify-items: center;
     font-size: 2rem;
     font-weight: 600;
     max-width: 780px;
     margin:0 auto;
+    color: var(--color-headings);
 
 }
 
@@ -692,4 +694,70 @@ transition:color 0.3s;
 /* -----block-plans========= */
 .block-plans .grid{
     gap: 8rem 4rem;
+}
+/* ---------------footer-------------- */
+.footer{
+    background-color: #232323;
+}
+.footer a{
+    text-decoration: none;
+    color: #777;
+}
+.footer a:hover{
+    color: #fff;
+}
+
+.footer__section{
+    padding:2rem;
+
+    border-bottom: 1px solid #393939;
+}
+.footer__heading{
+text-transform: uppercase;
+font-weight: 600;
+}
+.footer__brand{
+    margin-top: 5rem;
+    text-align: center;
+}
+.footer__copywrite{
+    font-size: 2.1rem;
+    color: #fff;
+    opacity: 0.3;;
+}
+.footer__section .list{
+    margin:0;
+}
+
+
+
+
+@media screen and (min-width:768px) {
+    .footer__grid{
+    grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+    }
+    .collapsible__icon{
+        display: none;
+    }
+    .footer .collapsible__content{
+        opacity: 1;
+        max-height: 100%;
+    }
+    .footer__brand{
+        margin:1;
+        order: -1;
+        width: 100%;
+        max-width: 230px;
+    }
+    .footer__copywrite{
+        font-size: 1.5rem;
+    }
+    .footer__section{
+        border:none;
+    }
+    .footer__heading{
+        font-size: 1.6rem;
+    }
+    
+
 }
